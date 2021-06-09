@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+:root{
+    --main-color: #003060;
+    --light-color: #fff;
+    --dark-color: #010101;
+    --accent-color: #797979;
+    --card-color: #2E8BC0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    font-family: 'Secular One', sans-serif;
+    overflow-x: hidden;
+}
+
+section {
+    height: 100vh;
+    width: 100vh;
+}
+/* home */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 5rem;
+}
+
+.hero-text-container{
+    position: relative;
+    width: max-content;
+}
+
+.hero-text {
+    color: var(--accent-color);
+}
+
+#hero-eclipse {
+    position: absolute;
+    bottom: 1rem;
+    left: -4rem;
+    z-index: -1;
+}
+
+/* intro */
+
+.intro-container{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+}
+
+.intro{
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+
+.intro-text-container{
+    display: block;
+    width: 45rem;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+
+#intro-eclipse{
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+    z-index: -1;
+}
+
+/* button */
+
+.intro-container button{
+    font-family: 'Secular One', sans-serif;
+    border: none;
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    margin: 0 5rem;
+}
+
+/* navbar */
+
+.navbar{
+    max-width: max-content;
+    margin: 2rem 0 0 1rem;
+}
+
+.links-container {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem;
+}
+
+.links-container li {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    color: var(--light-color);
+}
+
+.links-container li span {
+    margin: 0.5rem;
+}
+
+/* arrow */
+
+.arrow{
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    bottom: 01rem;
+    transition: 1s ease-in-out;
+    animation: giggle 1s infinite;
+}
+
+@keyframes giggle {
+    30%, 40%{
+        transform: translateY(-20%);
+    }
+    
+}
+
+@media screen and (max-width:768px){    
+    
+}
+
+
+@media screen and (max-width:500px){
+    
+    #hero-eclipse{
+        height: 3rem;
+        top: 1px;
+    }
+}
