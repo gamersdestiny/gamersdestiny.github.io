@@ -8,24 +8,37 @@
     --card-color: #2E8BC0;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: var(--main-color);
-    font-family: 'Secular One', sans-serif;
-    overflow-x: hidden;
+html::-webkit-scrollbar{
+    background: var(--main-color);
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--light-color);
 }
 
-section {
-    height: 100vh;
-    width: 100vh;
+html, body {
+    margin: 0rem !important;
+    padding: 0rem !important;
+    scroll-behavior: smooth;
 }
+
+body{
+    background-color: var(--main-color);
+    font-family: 'Secular One', sans-serif;
+    
+}
+
+/* ========================= home section =================================== */
+
 /* home */
+.home{
+    height: 100vh;
+}
+
 .hero-container {
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     margin-top: 5rem;
 }
 
@@ -35,6 +48,7 @@ section {
 }
 
 .hero-text {
+    mix-blend-mode: exclusion;
     color: var(--accent-color);
 }
 
@@ -42,15 +56,21 @@ section {
     position: absolute;
     bottom: 1rem;
     left: -4rem;
-    z-index: -1;
+}
+
+#hero-eclipse:hover{
+    cursor: pointer;
+    transition: 1s ease;
+    animation: rotate180 1s forwards;
 }
 
 /* intro */
 
 .intro-container{
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-evenly;
+    margin: 5rem 0;
 }
 
 .intro{
@@ -62,7 +82,7 @@ section {
     display: block;
     width: 45rem;
     text-align: center;
-    margin: auto;
+    margin: auto auto auto 0rem;
     position: relative;
 }
 
@@ -73,29 +93,18 @@ section {
     z-index: -1;
 }
 
-/* button */
-
-.intro-container button{
-    font-family: 'Secular One', sans-serif;
-    border: none;
-    background: var(--dark-color);
-    color: var(--light-color);
-    padding: .5rem 1rem;
-    border-radius: 5px;
-    margin: 0 5rem;
-}
-
 /* navbar */
 
 .navbar{
     max-width: max-content;
     margin: 2rem 0 0 1rem;
+    margin: auto;
 }
 
 .links-container {
     list-style-type: none;
     padding: 0;
-    margin: 2rem;
+    margin: 2rem;    
 }
 
 .links-container li {
@@ -104,15 +113,75 @@ section {
     margin: 1rem;
     color: var(--light-color);
 }
+.links-container li a{
+    color: var(--light-color);
+    text-decoration: none;
+}
 
 .links-container li span {
     margin: 0.5rem;
 }
 
+/* button */
+
+.btn{
+    font-family: 'Secular One', sans-serif;
+    border: none;
+    text-decoration: none;
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    margin: 0 5rem;
+    box-shadow: 3px -3px -1px black;
+    transition: .5s ease-out all;
+    position: relative;
+}
+
+
+.btn::before{
+    content: '';
+    background: #FD6A02;
+    position: absolute;
+    height: 3px;
+    left: 0;
+    top: 0;
+    width: 0%;
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    right: 0;
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+}
+
+.btn:hover:before{
+    width: 100%;
+    transition: .5s ease-out all;
+}
+
+.btn:hover:after{
+    width: 100%;
+    background: #FD6A02;
+    transition: .5s ease-out all;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+
 /* arrow */
 
 .arrow{
-    width: 100vw;
+    width: 100%;
     display: grid;
     place-items: center;
     position: absolute;
@@ -121,6 +190,184 @@ section {
     animation: giggle 1s infinite;
 }
 
+/* =========================== project section ======================================= */
+
+.container-pro{
+    display: flex;
+}
+
+.projects-container{
+    min-width: 90%;
+    display: grid;
+    background: var(--card-color);
+    height: 13rem;
+    border-radius: .5rem;
+    margin: 2.5rem;
+    padding: 1rem;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.projects{
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+
+.title{
+    font-size: 2rem;
+    color: white;
+    margin: 0 1rem;
+}
+
+/* project title & eclipse */
+
+.project-title{
+    margin-left: 1.5rem;
+    grid-column: span 2;
+}
+
+.project-text{
+    position: relative;
+}
+
+.project-eclipse1{
+    position: absolute;
+    top: 1rem;
+    mix-blend-mode: color-dodge;
+}
+
+.project-eclipse1:hover{
+    animation: rotate180 1s forwards;
+}
+
+.project-eclipse2{
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    mix-blend-mode: color-dodge;
+}
+
+.project-eclipse2:hover{
+    animation: rotate90 1s forwards;
+}
+
+.project-description{
+    margin-left: 3.5rem;
+}
+
+/* image */
+.project-image{
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    bottom: 0;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+/* ========================= resume section =============================== */
+.resume{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+.resume-title{
+    color: var(--light-color);
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+/* educatio */
+.education{
+    margin: 2rem;
+    margin-top: 5rem;
+    color: white;
+}
+
+.edu-title{
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.edu-description{
+    margin-left: 3rem;
+}
+
+/* skills */
+
+.sk-title{
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 3rem;
+    list-style: none;
+}
+
+.sk-tit{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.sk-ul{
+    list-style: none;
+}
+
+.sk-ul li{
+    color: var(--accent-color);
+    margin-left: 1rem;
+}
+
+/* experience */
+.ecperience{
+    margin: 1rem;
+}
+
+.exp{
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: var(--accent-color);
+}
+
+.exp-description{
+    color: var(--light-color);
+    margin-left: 5rem;
+}
+
+.resB{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+/* ================================ About section ========================== */
+
+.about{
+    width: 90%;
+    margin: auto;
+    height: 50vh;
+}
+
+.about-title{
+    color: var(--light-color);
+    font-size: 2rem;
+}
+.about-container{
+    background-color: var(--card-color);
+    padding: 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+}
+
+
+/* ============================ keyframe ==================================== */
+
 @keyframes giggle {
     30%, 40%{
         transform: translateY(-20%);
@@ -128,15 +375,42 @@ section {
     
 }
 
-@media screen and (max-width:768px){    
+@keyframes up10 {
     
+    from{
+        transform: translateY(-100%);
+    }
+    
+    to{
+        transform: translateY(-20%);
+    }
 }
 
+@keyframes rotate90 {
+    to{
+        transform: rotate(90deg) rotateZ(0);
+    }
+}
 
-@media screen and (max-width:500px){
+@keyframes rotate180 {
     
-    #hero-eclipse{
-        height: 3rem;
-        top: 1px;
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-180deg);
+    }
+}
+
+/* ======================= meadia query ===================================== */
+
+@media screen and (max-width:550px){
+
+    .intro{
+        font-size: .7rem;
+    }
+
+    .links-container li a{
+        display: none;
     }
 }
