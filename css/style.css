@@ -6,6 +6,7 @@
     --dark-color: #010101;
     --accent-color: #797979;
     --card-color: #2E8BC0;
+    --eclipse-color: rgb(226, 211, 211);
     --ins-color: #cc2e8a;
     --twi-color: #1c9cea;
     --mail-color: #bc3829;
@@ -363,6 +364,32 @@ body{
     padding: 2.5rem;
     font-size: 1.3rem;
     border-radius: 5px;
+    position: relative;
+}
+
+.about-eclipse{
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    mix-blend-mode: color-dodge;
+    fill: var(--eclipse-color);
+}
+
+.about-eclipse:hover{
+    animation: 1s rotate180 forwards;
+}
+
+.about-semi{
+    position: absolute;
+    bottom: 3rem;
+    right: 2rem;
+    mix-blend-mode: color-dodge;
+    fill: rgb(226, 211, 211);
+}
+
+.about-semi:hover{
+    transition: 1s ease all;
+    animation: 1s rotate180 forwards;
 }
 
 /* ======================= contact ===================================== */
