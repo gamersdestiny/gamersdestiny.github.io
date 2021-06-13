@@ -6,6 +6,9 @@
     --dark-color: #010101;
     --accent-color: #797979;
     --card-color: #2E8BC0;
+    --ins-color: #cc2e8a;
+    --twi-color: #1c9cea;
+    --mail-color: #bc3829;
 }
 
 html::-webkit-scrollbar{
@@ -269,7 +272,6 @@ body{
 
 /* ========================= resume section =============================== */
 .resume{
-    height: 100vh;
     width: 90%;
     margin: auto;
     margin-top: 3rem;
@@ -283,7 +285,6 @@ body{
 /* educatio */
 .education{
     margin: 2rem;
-    margin-top: 5rem;
     color: white;
 }
 
@@ -351,7 +352,6 @@ body{
 .about{
     width: 90%;
     margin: auto;
-    height: 50vh;
 }
 
 .about-title{
@@ -365,7 +365,138 @@ body{
     border-radius: 5px;
 }
 
+/* ======================= contact ===================================== */
 
+.contact{
+    width: 90%;
+    margin: auto;
+}
+
+.contact-title{
+    color: var(--light-color);
+    font-size: 2rem;
+}
+
+.name{
+    background: transparent;
+    color: var(--light-color);
+    border: none;
+    outline: none;
+    margin: 1rem;
+    border-bottom: 2px solid var(--light-color);
+    width: 95%;
+}
+
+.email{
+    background: transparent;
+    color: var(--light-color);
+    margin: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--light-color);
+    width: 95%;
+}
+
+.message-text{
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+
+.message{
+    background: var(--light-color);
+    color: var(--dark-color);
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--light-color);
+    border-radius: 5px;
+    width: 95%;
+    height: 15rem;
+    font-family: 'Secular One', sans-serif;
+
+}
+
+.contact-container{
+    position: relative;
+    height: 35rem;
+}
+
+.send{
+    display: block;
+    margin: 0 auto;
+    padding: .5rem 2rem;
+}
+
+
+/* ============================ social links ==================================== */
+
+.social-links{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 5rem;
+    
+}
+
+.s-links-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-title{
+    color: var(--light-color);
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+.round-btn{
+    font-family: 'Secular One', sans-serif;
+    border: none;
+    text-decoration: none;
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: .6rem 1rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+    transition: .5s ease-out all;
+}
+
+.insta{
+    background: var(--ins-color);
+}
+
+.twit{
+    background: var(--twi-color);
+}
+
+.mail{
+    background: var(--mail-color);
+}
+
+.git:hover{
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+.insta:hover{
+    background: var(--light-color);
+    color: var(--ins-color);
+}
+
+.twit:hover{
+    background: var(--light-color);
+    color: var(--twi-color);
+}
+
+.mail:hover{
+    background: var(--light-color);
+    color: var(--mail-color);
+}
+
+.btt{
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+}
 /* ============================ keyframe ==================================== */
 
 @keyframes giggle {
