@@ -11,7 +11,6 @@
     --twi-color: #1c9cea;
     --mail-color: #bc3829;
 }
-
 html::-webkit-scrollbar{
     background: var(--main-color);
     scroll-behavior: smooth;
@@ -29,6 +28,7 @@ html, body {
 body{
     background-color: var(--main-color);
     font-family: 'Secular One', sans-serif;
+    overflow-x: hidden;
     
 }
 
@@ -196,33 +196,65 @@ body{
 
 /* =========================== project section ======================================= */
 
+.projects{
+    width: 100vw;
+    margin: 0 auto;
+}
+
 .container-pro{
     display: flex;
+    width: 300%;
+    overflow: hidden;
+    position: relative;
+}
+
+.rad-container{
+    display: none;
+}
+
+.lab-container{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 50vw;
+}
+
+.rad-lab{
+    margin: .2rem;
+    border: 3px solid var(--light-color);
+    border-radius: 50%;
+    height: 1rem;
+    width: 1rem;
+    transition: .5s ease all ;
+}
+
+#rad1:checked ~ .projects-container{
+    margin-left: -33.33%;
+}
+
+.rad-lab:hover{
+    background: var(--light-color);
+    border-color: var(--main-color);
 }
 
 .projects-container{
-    min-width: 90%;
     display: grid;
     background: var(--card-color);
     height: 13rem;
     border-radius: .5rem;
-    margin: 2.5rem;
+    margin: 3rem;
     padding: 1rem;
     position: relative;
     grid-template-columns: 1fr 1fr;
-    
-}
-
-.projects{
-    width: 90%;
-    margin: 0 auto;
-    overflow-x: scroll;
+    animation: scroll-auto 10s infinite;
+    overflow-x: hidden;
 }
 
 .title{
     font-size: 2rem;
     color: white;
     margin: 0 1rem;
+    margin-left: 2rem;
 }
 
 /* project title & eclipse */
@@ -248,7 +280,7 @@ body{
 
 .project-eclipse2{
     position: absolute;
-    right: 1rem;
+    right: 0;
     bottom: 0;
     mix-blend-mode: color-dodge;
 }
@@ -264,6 +296,8 @@ body{
 /* image */
 .project-image{
     position: absolute;
+    max-height: 85%;
+    max-width: 15rem;
     right: 0rem;
     top: 0;
     bottom: 0;
@@ -526,6 +560,22 @@ body{
 }
 /* ============================ keyframe ==================================== */
 
+@keyframes scroll-auto {
+    
+    0%,10%,20%{
+        left: -0;
+    }
+    30%,40%, 50%{
+        left: -33.33%;
+    }
+    60%,70%, 80%{
+        left: -66.66%;
+    }
+    90%,100%{
+        left: -0;
+    }
+}
+
 @keyframes giggle {
     30%, 40%{
         transform: translateY(-20%);
@@ -559,6 +609,7 @@ body{
         transform: rotate(-180deg);
     }
 }
+
 
 /* ======================= meadia query ===================================== */
 
