@@ -2,35 +2,45 @@
 @media screen and (max-width:650px){
 
     #hero-eclipse{
-        width: 6rem;
-		left: -1rem;
+        width: 5.5rem;
+		left: -0.5rem;
     }
 
 	.hero-text{
 		font-size: 1.3rem;
 	}
 
+	.links-container{
+		margin-left: .5rem;
+	}
+
+
 	.links-container li{
 		margin: .5rem 0;
 	}
 
-    .links-container li a{
+    .li-text {
         display: none;
     }
+
+	.li-icons{
+		width: 1.5em;
+	}
 
 	/* intro */
 
     .intro{
-        font-size: .6rem;
+        font-size: .5rem;
     }
 
 	#intro-eclipse{
-		width: 10rem;
+		width: 8rem;
+		top: .7rem;
 	}
 	/* button */
 	.btn{
-		font-size: .6rem;
-		margin: 2rem 1rem;
+		font-size: .5rem;
+		margin: 1.5rem 1rem;
 	}
 
 	.arrow svg{
