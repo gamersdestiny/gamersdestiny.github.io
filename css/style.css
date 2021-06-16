@@ -9,7 +9,7 @@
     --eclipse-color: rgb(226, 211, 211);
     --ins-color: #cc2e8a;
     --twi-color: #1c9cea;
-    --mail-color: #bc3829;
+    --mail-bg: #DD5044;
 }
 html::-webkit-scrollbar{
     background: var(--main-color);
@@ -515,11 +515,23 @@ body{
     text-decoration: none;
     background: var(--dark-color);
     color: var(--light-color);
-    padding: .6rem 1rem;
+    padding: 1rem;
     border-radius: 50%;
     margin: 0 1rem;
     transition: .5s ease-out all;
+    position: relative;
 }
+
+.round-btn i{
+    fill: var(--light-color);
+    border-radius: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .5s ease-in-out all;
+}
+
 
 .insta{
     background: var(--ins-color);
@@ -530,8 +542,22 @@ body{
 }
 
 .mail{
-    background: var(--mail-color);
+    background: var(--light-color);
+    transition: .5s ease-in-out all;
 }
+
+.i-mail{
+    fill:#DD5044;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.i-mail:hover{
+    fill:var(--light-color);
+}
+
 
 .git:hover{
     background: var(--light-color);
@@ -549,8 +575,8 @@ body{
 }
 
 .mail:hover{
-    background: var(--light-color);
-    color: var(--mail-color);
+    background: var(--mail-bg);
+    fill: var(--light-color);
 }
 
 .btt{
