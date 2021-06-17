@@ -74,7 +74,8 @@ body{
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    margin: 5rem 0;
+    margin: auto 0;
+    height: 80vh;
 }
 
 .intro{
@@ -84,7 +85,7 @@ body{
 
 .intro-text-container{
     display: block;
-    width: 45rem;
+    width: auto;
     text-align: center;
     margin: auto auto auto 0rem;
     position: relative;
@@ -92,7 +93,7 @@ body{
 
 #intro-eclipse{
     position: absolute;
-    right: 1rem;
+    right: -1rem;
     top: 1.5rem;
     z-index: -1;
 }
