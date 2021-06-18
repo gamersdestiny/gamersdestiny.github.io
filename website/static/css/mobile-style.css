@@ -1,10 +1,16 @@
 @media screen and (max-width:850px){
 	html{
-		font-size: 13px;
+		font-size: 14px;
 	}
 
 	#hero-eclipse{
-		width: 5rem;
+		width: 7rem;
+	}
+	
+	#intro-eclipse{
+		width: 13rem;
+		top: 1.5rem;
+		right: -0.3rem;
 	}
 }
 
@@ -24,7 +30,7 @@
 	/* navbar */
 	
 	.navbar{
-		margin-left: 2rem;
+		margin-left: 1.5rem;
 	}
 
 	.links-container{
@@ -41,14 +47,14 @@
     }
 
 	.li-icons{
-		width: 1.5em;
+		width: 2rem;
 		transform: translateX(0deg);
 	}
 
 	/* intro */
 
     .intro{
-        font-size: .5rem;
+        font-size: .7rem;
     }
 
 	#intro-eclipse{
@@ -178,12 +184,17 @@
 		font-size: 1rem;
 	}
 
-
+	
+	.t-text{
+		font-size: .9rem;
+	}
 
 }
 
 @media screen and (max-width:400px){
 	html{
-		font-size: 10px;
+		font-size: 12px;
 	}
+
+	
 }

@@ -75,7 +75,7 @@ body{
     width: 100%;
     justify-content: space-evenly;
     margin: auto 0;
-    height: 60vh;
+    height: 65vh;
 }
 
 .intro{
@@ -491,8 +491,7 @@ body{
 
 .social-links{
     width: 95%;
-    margin: auto;
-    margin-bottom: 5rem;
+    margin: 4rem auto;
     
 }
 
