@@ -59,7 +59,7 @@ body{
 #hero-eclipse {
     position: absolute;
     bottom: 1rem;
-    left: -4rem;
+    left: -2rem;
 }
 
 #hero-eclipse:hover{
@@ -239,14 +239,13 @@ body{
 .projects-container{
     display: grid;
     background: var(--card-color);
-    height: 13rem;
     border-radius: .5rem;
     width: 25%;
     margin: 3rem;
     padding: 1rem;
     position: relative;
     grid-template-columns: 1fr 1fr;
-    animation: scroll-auto 10s infinite;
+    animation: scroll-auto 20s infinite;
 }
 
 .title{
@@ -609,16 +608,16 @@ body{
 
 @keyframes scroll-auto {
     
-    0%,10%,20%{
+    0%, 10%{
         left: -0;
     }
-    30%,40%, 50%{
+    20%, 30%, 40%, 45%{
         left: -25%;
     }
-    60%,70%, 80%{
+    50%, 60%, 70%, 75%{
         left: -50%;
     }
-    90%,100%{
+    80%, 90%,100%{
         left: -75%;
     }
 }

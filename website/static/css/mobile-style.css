@@ -1,10 +1,16 @@
-@media screen and (max-width:800px){
+@media screen and (max-width:850px){
 	html{
 		font-size: 13px;
 	}
+
+	#hero-eclipse{
+		width: 5rem;
+	}
 }
 
-@media screen and (max-width:650px){
+
+
+@media screen and (max-width:700px){
 
     #hero-eclipse{
         width: 5.5rem;
@@ -88,13 +94,11 @@
 		line-height: 1.5;
 	}
 
-
-
 	.project-image{
 		position: relative;
-		min-width: 90%;
-		max-height: 15rem;
-		margin: .5rem auto;
+		min-width: 80%;
+		max-height: 35rem;
+		margin: 1.5rem auto;
 	}
 	
 	/* resume */
