@@ -196,5 +196,13 @@
 		font-size: 12px;
 	}
 
-	
+	.links-container {
+		margin-left: 0rem;
+		margin-right: 0;
+	}
+
+	.li-icons {
+		width: 1rem;
+		transform: translateX(0deg);
+	}
 }
