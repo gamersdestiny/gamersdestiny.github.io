@@ -229,6 +229,7 @@ body{
     border-radius: 50%;
     outline: none;
     border: 1px solid black;
+    transition: .5s ease;
 }
 
 .btns{
@@ -238,7 +239,13 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100vw;
+    height: max-content;
     top: 50%;
+}
+
+.prev:hover, .next:hover{
+    background: var(--light-color);
+    color: var(--card-color);
 }
 
 .prev{
