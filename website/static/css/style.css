@@ -75,7 +75,7 @@ body{
     width: 100%;
     justify-content: space-evenly;
     margin: auto 0;
-    height: 60vh;
+    height: 65vh;
 }
 
 .intro{
@@ -200,6 +200,7 @@ body{
     width: 100vw;
     margin: 0 auto;
     overflow-x: hidden;
+    position: relative;
 }
 
 .container-pro{
@@ -207,33 +208,6 @@ body{
     width: 400%;
     overflow: hidden;
     position: relative;
-}
-
-.rad-container{
-    display: none;
-}
-
-.lab-container{
-    position: absolute;
-    display: flex;
-    bottom: 0;
-    left: 50vw;
-    transform: translateX(-50%);
-}
-
-.rad-lab{
-    margin: .2rem;
-    border: 3px solid var(--light-color);
-    border-radius: 50%;
-    height: 1rem;
-    width: 1rem;
-    transition: .5s ease all ;
-    display: none;
-}
-
-.rad-lab:hover{
-    background: var(--light-color);
-    border-color: var(--main-color);
 }
 
 .projects-container{
@@ -245,7 +219,33 @@ body{
     padding: 1rem;
     position: relative;
     grid-template-columns: 1fr 1fr;
-    animation: scroll-auto 20s infinite;
+}
+
+.prev, .next{
+    height: 30px;
+    width: 30px;
+    background: var(--card-color);
+    color: var(--light-color);
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid black;
+}
+
+.btns{
+    position: absolute;
+    bottom: 0;
+    margin: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    top: 50%;
+}
+
+.prev{
+    margin-left: 1rem;
+}
+.next{
+    margin-right: 3rem;
 }
 
 .title{
@@ -284,7 +284,7 @@ body{
 }
 
 .project-eclipse2:hover{
-    animation: rotate90 1s forwards;
+    animation: rotate180 1s forwards;
 }
 
 .project-description{
@@ -300,7 +300,7 @@ body{
     top: 0;
     bottom: 0;
     border-radius: 5px;
-    margin: 1rem;
+    margin: auto 1rem;
 }
 
 /* ========================= resume section =============================== */
@@ -491,8 +491,7 @@ body{
 
 .social-links{
     width: 95%;
-    margin: auto;
-    margin-bottom: 5rem;
+    margin: 4rem auto;
     
 }
 
@@ -605,22 +604,6 @@ body{
 }
 
 /* ============================ keyframe ==================================== */
-
-@keyframes scroll-auto {
-    
-    0%, 10%{
-        left: -0;
-    }
-    20%, 30%, 40%, 45%{
-        left: -25%;
-    }
-    50%, 60%, 70%, 75%{
-        left: -50%;
-    }
-    80%, 90%,100%{
-        left: -75%;
-    }
-}
 
 @keyframes giggle {
     30%, 40%{
