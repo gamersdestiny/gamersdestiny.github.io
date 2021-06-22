@@ -2,6 +2,14 @@ const container = document.querySelector(".container-pro");
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 const slider = document.querySelectorAll(".projects-container");
+const aContainer = document.querySelector(".alert-cont");
+
+if(aContainer){
+	setTimeout(()=>{
+		aContainer.style.display="none";
+	}, 4000);
+}
+
 var playauto;
 var incnumber = 0;
 var initial= 0	;

@@ -10,6 +10,7 @@
     --ins-color: #cc2e8a;
     --twi-color: #1c9cea;
     --mail-bg: #DD5044;
+    --success-color: #0f8d00;
 }
 html::-webkit-scrollbar{
     background: var(--main-color);
@@ -648,3 +649,18 @@ body{
 
 
 /* ======================= meadia query ===================================== */
+/* alert */
+
+.alert-cont{
+    position: fixed;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--light-color);
+}
+.alert{
+    background: var(--success-color);
+    padding: 1rem;
+    border-radius: 10px;
+    color: var(--light-color);
+}
