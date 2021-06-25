@@ -1,0 +1,208 @@
+@media screen and (max-width:850px){
+	html{
+		font-size: 14px;
+	}
+
+	#hero-eclipse{
+		width: 7rem;
+	}
+	
+	#intro-eclipse{
+		width: 13rem;
+		top: 1.5rem;
+		right: -0.3rem;
+	}
+}
+
+
+
+@media screen and (max-width:700px){
+
+    #hero-eclipse{
+        width: 5.5rem;
+		left: -0.8rem;
+    }
+
+	.hero-text{
+		font-size: 1.3rem;
+	}
+
+	/* navbar */
+	
+	.navbar{
+		margin-left: 1.5rem;
+	}
+
+	.links-container{
+		margin-left: 1rem;
+		margin-right: 0;
+	}
+
+	.links-container li{
+		margin: .5rem 0;
+	}
+
+    .li-text {
+        display: none;
+    }
+
+	.li-icons{
+		width: 2rem;
+		transform: translateX(0deg);
+	}
+
+	/* intro */
+
+    .intro{
+        font-size: .7rem;
+    }
+
+	#intro-eclipse{
+		width: 8rem;
+		top: .7rem;
+	}
+	/* button */
+	.btn{
+		font-size: .5rem;
+		margin: 1.5rem 1rem;
+	}
+
+	.arrow svg{
+		width: 3rem;
+	}
+
+	/* project */
+
+	.title{
+		margin: 0 1rem;
+	}
+
+	.project-eclipse1{
+		width: 2.5rem;
+	}
+	.project-eclipse2{
+		width: 2.5rem;
+	}
+	
+	.projects-container{
+		height: max-content;
+		display: flex;
+		flex-direction: column;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.project-title{
+		margin-left: 1rem;
+	}
+
+	.project-description{
+		margin-left: 1.5rem;
+		line-height: 1.5;
+	}
+
+	.project-image{
+		position: relative;
+		min-width: 80%;
+		max-height: 35rem;
+		margin: 1.5rem auto;
+	}
+	
+	/* resume */
+	.resume-title{
+		margin-left: 0;
+	}
+
+	.education{
+		margin: 1rem;
+	}
+
+	.edu-description{
+		margin-left: 1rem;
+	}
+
+	/* skills */
+
+	.sk-title{
+		margin-left: 1rem;
+		margin-bottom: 0;
+	}
+	.skills-list{
+		margin-left: 0rem;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.sk-ul{
+		margin-top: 0;
+	}
+
+	/* experience */
+	.exp{
+		margin-left: 1rem;
+	}
+
+	.exp-description{
+		margin-left: 2rem;
+	}
+
+	.resB{
+		margin-top: 2rem;
+	}
+
+	/* about */
+	.about-container{
+		padding: 2rem;
+		font-size: 1rem;
+	}
+
+	.about-eclipse{
+	 width: 3rem;
+	}
+
+	.about-semi{
+		width: 6rem;
+	}
+
+	/* contact */
+	.message{
+		width: 85%;
+		position: relative;
+		left: 1rem;
+		margin: auto;
+	}
+
+	.send{
+		margin: auto;
+		margin-top: 1rem;
+	}
+
+	/* social links */
+	.s-title{
+		margin-left: 1rem;
+	}
+
+	.s-links-container{
+		font-size: 1rem;
+	}
+
+	
+	.t-text{
+		font-size: .9rem;
+	}
+
+}
+
+@media screen and (max-width:400px){
+	html{
+		font-size: 12px;
+	}
+
+	.links-container {
+		margin-left: 0rem;
+		margin-right: 0;
+	}
+
+	.li-icons {
+		width: 1rem;
+		transform: translateX(0deg);
+	}
+}

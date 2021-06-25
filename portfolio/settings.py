@@ -25,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('portfolioSecretKey')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['guna-gd.herokuapp.com']
+ALLOWED_HOSTS = ['3.109.1.189', "ec2-3-109-1-189.ap-south-1.compute.amazonaws.com", 'http://3.109.1.189/']
 
 
 # Application definition
