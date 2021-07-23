@@ -21,12 +21,12 @@ next.addEventListener("click", function forward(e){
 		slides.style.left = "0%";
 	});
 	incnumber++;
-	if(incnumber>len-2){
+	if(incnumber>len-1){
 		incnumber=0;
 	};
 
-	initial = initial-25;
-	if (initial<-50){
+	initial = initial-20;
+	if (initial<-80){
 		initial = 0;
 	};
 
@@ -45,13 +45,13 @@ prev.addEventListener("click", (e)=>{
 	});
 	incnumber--;
 	if(incnumber<0) {
-		incnumber=2;
+		incnumber=3;
 	};
 
 
-	initial = initial+25;
+	initial = initial+20;
 	if (initial>-0){
-		initial = -50;
+		initial = -60;
 	};
 	
 	
@@ -74,8 +74,8 @@ var repeater = ()=>{
 				slides.style.left = '0%'
 			});
 		};
-		initial = initial-25;
-		if (initial<-50){
+		initial = initial-20;
+		if (initial<-60){
 			initial = 0;
 		};
 		
@@ -85,11 +85,11 @@ var repeater = ()=>{
 	}, 3000);
 }
 
-repeater();
+// repeater();
 
-container.addEventListener("mouseover", ()=>{
-	clearInterval(playauto)
-})
-container.addEventListener("mouseout", ()=>{
-	repeater();
-})
+// container.addEventListener("mouseover", ()=>{
+// 	clearInterval(playauto)
+// })
+// container.addEventListener("mouseout", ()=>{
+// 	repeater();
+// })

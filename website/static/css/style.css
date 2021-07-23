@@ -139,7 +139,7 @@ body{
     border-radius: 5px;
     margin: 0 5rem;
     box-shadow: 3px -3px -1px black;
-    transition: .5s ease-out all;
+    transition: .3s ease-out all;
     position: relative;
 }
 
@@ -167,13 +167,13 @@ body{
 
 .btn:hover:before{
     width: 100%;
-    transition: .5s ease-out all;
+    transition: .3s ease-out all;
 }
 
 .btn:hover:after{
     width: 100%;
     background: #FD6A02;
-    transition: .5s ease-out all;
+    transition: .3s ease-out all;
 }
 
 .btn:hover{
@@ -206,7 +206,7 @@ body{
 
 .container-pro{
     display: flex;
-    width: 400%;
+    width: 500%;
     overflow: hidden;
     position: relative;
 }
@@ -230,7 +230,7 @@ body{
     border-radius: 50%;
     outline: none;
     border: 1px solid black;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 
 .btns{
@@ -524,7 +524,7 @@ body{
     padding: 1rem;
     border-radius: 50%;
     margin: 0 1rem;
-    transition: .5s ease-out all;
+    transition: .3s ease-out all;
     position: relative;
 }
 
@@ -535,7 +535,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: .5s ease-in-out all;
+    transition: .3s ease-in-out all;
 }
 
 
@@ -549,7 +549,7 @@ body{
 
 .mail{
     background: var(--light-color);
-    transition: .5s ease-in-out all;
+    transition: .3s ease-in-out all;
 }
 
 .i-mail{
