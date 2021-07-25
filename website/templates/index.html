@@ -7,9 +7,13 @@
     <meta name="description" content="guna Portfolio" />
     <meta name="description" content="gunafsdev" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="static\css\style.css">
     <link rel="stylesheet" href="static\css\mobile-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer"/>
+    
     <link rel="shortcut icon" href="static\media\logo.png" type="image/x-icon">
     <title>Portfolio</title>
   </head>
@@ -17,7 +21,7 @@
     <section class="home" id="home">
       <div class="hero-container">
         <div class="hero-text-container">
-        <svg id="hero-eclipse" width="150px" viewBox="0 0 225 98" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class=" wow animate__animated animate__flip" id="hero-eclipse" width="150px" viewBox="0 0 225 98" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M225 97.5C225 71.6414 213.147 46.8419 192.05 28.5571C170.952 10.2723 142.337 1.95227e-06 112.5 0C82.6632 -1.95227e-06 54.0483 10.2723 32.9505 28.5571C11.8527 46.8419 4.50524e-06 71.6414 0 97.5L112.5 97.5H225Z" fill="white"/>
             </svg>            
         <h2 class="hero-text">Hi! I'm Guna, Web Developer...</h2>
@@ -64,7 +68,7 @@
       </a>
       </div>
     </section>
-    <section class="projects" id="projects">
+    <section class="projects wow animate__animated animation__delay-1s animate__slideInLeft" id="projects">
       <p class="title">Projects</p>
       <div class="container-pro">
       <div class="projects-container frst-container">
@@ -123,7 +127,7 @@
       </div>
     </div>
     </section>
-    <section class="resume" id="resume">
+    <section class="resume wow animate__animated animation__delay-1s animate__slideInRight" data-wow-duration="2s" id="resume">
       <p class="resume-title">My Resume</p>
       <div class="education">
         <p class="edu-title">Education</p>
@@ -165,7 +169,7 @@
         </ul>
       </div>
       </div>
-      <div class="experience">
+      <div class="experience wow animate__animated animation__delay-1s animate__slideInLeft" data-wow-duration="1s">
         <p class="exp">Experience</p>
         <p class="exp-description">I worked in some of my personal projects which lead me to learn the basics, And I worked on a jewllery shop project which has diffrent pages and some advanced feature like searching across the whole the site, I designed it in a minimal theme and the best part is, I designed and developed the whole shop project website in mobile, I’am looking forward to work on some organisation to gain some more experience which help me grow better and better</p>
       </div>
@@ -174,7 +178,7 @@
         <a href="https://drive.google.com/file/d/1-7rcxejoN9Fe3pu_lbxfAA9_26fhzkPB/view?usp=drivesdk" class="res-btn btn">Download CV</a>
       </div>
     </section>
-    <section class="about" id="about">
+    <section class="about wow animate__animated animation__delay-1s animate__slideInRight" data-wow-duration="1s" id="about">
       <p class="about-title">About Me</p>
       <div class="about-container">
         <svg class="about-eclipse" width="60" viewBox="0 0 96 191" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="about-eclipse" d="M95.5 0C82.9588 0 70.5403 2.47018 58.9537 7.2695C47.3671 12.0688 36.8393 19.1033 27.9713 27.9713C19.1033 36.8393 12.0688 47.3671 7.2695 58.9537C2.47018 70.5403 -5.48195e-07 82.9588 0 95.5C5.48195e-07 108.041 2.47018 120.46 7.26951 132.046C12.0688 143.633 19.1033 154.161 27.9713 163.029C36.8393 171.897 47.3671 178.931 58.9537 183.73C70.5403 188.53 82.9588 191 95.5 191V143.25C89.2294 143.25 83.0202 142.015 77.2269 139.615C71.4336 137.216 66.1697 133.698 61.7357 129.264C57.3017 124.83 53.7844 119.566 51.3848 113.773C48.9851 107.98 47.75 101.771 47.75 95.5C47.75 89.2294 48.9851 83.0202 51.3848 77.2269C53.7844 71.4336 57.3017 66.1696 61.7356 61.7357C66.1696 57.3017 71.4336 53.7844 77.2269 51.3848C83.0202 48.9851 89.2294 47.75 95.5 47.75V0Z"/></svg>
@@ -184,7 +188,7 @@
         <svg class="about-semi" width="150" viewBox="0 0 196 98" fill="none" xmlns="http://www.w3.org/2000/svg"><path id="about-half-circle" d="M0 0C0 12.8695 2.53485 25.6131 7.45981 37.503C12.3848 49.3929 19.6034 60.1963 28.7035 69.2965C37.8037 78.3966 48.6071 85.6152 60.497 90.5402C72.3869 95.4652 85.1305 98 98 98C110.87 98 123.613 95.4652 135.503 90.5402C147.393 85.6152 158.196 78.3966 167.296 69.2965C176.397 60.1963 183.615 49.3929 188.54 37.503C193.465 25.6131 196 12.8695 196 -7.62939e-06L98 0L0 0Z" /></svg>
       </div>
     </section>
-    <form class="contact" id="contact" method='post' >
+    <form class="contact wow animate__animated animation__delay-1s animate__slideInLeft" data-wow-duration="1s" id="contact" method='post' >
     {% csrf_token %}
       <div class="contact-container">
         <p class="contact-title">Contact</p>
@@ -221,6 +225,11 @@
       {% endfor %}
     {% endif %}
     </div>
-    <script src="static\js\script.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script>
+      new WOW().init();
+    </script>
+
   </body>
 </html>

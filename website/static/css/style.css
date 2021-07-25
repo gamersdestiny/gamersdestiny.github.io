@@ -12,25 +12,14 @@
     --mail-bg: #DD5044;
     --success-color: #0f8d00;
 }
-html::-webkit-scrollbar{
-    background: var(--main-color);
-    scroll-behavior: smooth;
-}
-::-webkit-scrollbar-thumb{
-    background: var(--light-color);
-}
 
-html, body {
+body{
     margin: 0rem !important;
     padding: 0rem !important;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-}
-
-body{
     background-color: var(--main-color);
     font-family: 'Secular One', sans-serif;
-    
+    overflow-x: hidden;
 }
 
 /* ========================= home section =================================== */

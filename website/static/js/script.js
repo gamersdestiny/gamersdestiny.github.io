@@ -85,11 +85,11 @@ var repeater = ()=>{
 	}, 3000);
 }
 
-// repeater();
+repeater();
 
-// container.addEventListener("mouseover", ()=>{
-// 	clearInterval(playauto)
-// })
-// container.addEventListener("mouseout", ()=>{
-// 	repeater();
-// })
+container.addEventListener("mouseover", ()=>{
+	clearInterval(playauto)
+})
+container.addEventListener("mouseout", ()=>{
+	repeater();
+})
