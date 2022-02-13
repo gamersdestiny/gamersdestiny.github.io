@@ -61,6 +61,11 @@
 		width: 8rem;
 		top: .7rem;
 	}
+
+	.intro-text-container {
+		max-width: 20rem;
+	}
+
 	/* button */
 	.btn{
 		font-size: .5rem;

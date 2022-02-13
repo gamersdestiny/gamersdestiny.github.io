@@ -93,3 +93,11 @@ container.addEventListener("mouseover", ()=>{
 container.addEventListener("mouseout", ()=>{
 	repeater();
 })
+
+const backToTop = document.querySelector('.btt')
+window.addEventListener('scroll', () => {
+	if(window.scrollY > 0)
+		backToTop.classList.remove('none');
+	if(window.scrollY == 0)
+		backToTop.classList.add('none');
+})

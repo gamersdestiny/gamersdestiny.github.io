@@ -33,6 +33,10 @@ body{
     
 }
 
+.none {
+    display: none !important;
+}
+
 /* ========================= home section =================================== */
 
 /* home */
@@ -90,6 +94,7 @@ body{
     text-align: center;
     margin: auto auto auto 0rem;
     position: relative;
+    max-width: 40rem;
 }
 
 #intro-eclipse{
@@ -586,9 +591,15 @@ body{
 }
 
 .btt{
+    position: fixed;
+    border-radius: 50%;
+    background: var(--light-color);
+    width: 4rem;
+    height: 4rem;
+    bottom: 5%;
+    right: 2%;
     display: grid;
     place-items: center;
-    margin: 2rem 0;
 }
 
 .thanks-note{
